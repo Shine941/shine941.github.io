@@ -1,1 +1,0 @@
-tiktok-developers-site-verification=BUDiTj3SzwzkVOemUen3A5DgzPUoZAHW

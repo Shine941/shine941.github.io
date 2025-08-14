@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>[Your App Name] · TikTok Video Analytics</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="[Your App Name] helps retrieve and analyze TikTok video statistics (views, likes, comments, favorites, shares) for internal business analytics.">
+  <!-- Open Graph -->
+  <meta property="og:title" content="[Your App Name] · TikTok Video Analytics">
+  <meta property="og:description" content="Retrieve and analyze TikTok video statistics for internal analytics.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://[your-username].github.io/[your-repo]/">
+  <!-- Favicons (可选) -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='64' width='64'%3E%3Ctext y='50'%3E📊%3C/text%3E%3C/svg%3E">
+
+  <style>
+    :root {
+      --bg: #0b0f1a;
+      --card: #12182a;
+      --muted: #9fb0d0;
+      --text: #e6efff;
+      --accent: #6aa9ff;
+      --accent2:#7ef0d6;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;height:100%;background:linear-gradient(180deg,#0b0f1a,#0b1222);}
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,'Helvetica Neue',Arial,'Noto Sans',sans-serif;color:var(--text);line-height:1.6}
+    .wrap{max-width:960px;margin:0 auto;padding:56px 20px 80px}
+    .hero{display:flex;gap:28px;align-items:center;flex-wrap:wrap}
+    .badge{display:inline-block;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:#0b0f1a;background:linear-gradient(90deg,var(--accent),var(--accent2));padding:6px 10px;border-radius:999px}
+    .card{background:rgba(18,24,42,.7);backdrop-filter: blur(6px);border:1px solid rgba(255,255,255,.08);border-radius:16px;padding:20px}
+    h1{font-size:36px;margin:8px 0 6px}
+    p.lead{color:var(--muted);font-size:16px;margin:0 0 6px}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;margin-top:24px}
+    .btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:18px}
+    .btn{
+      display:inline-flex;align-items:center;gap:8px;padding:12px 16px;border-radius:12px;
+      color:#0b0f1a;background:linear-gradient(90deg,var(--accent),var(--accent2));text-decoration:none;font-weight:600
+    }
+    .btn.ghost{background:transparent;color:var(--text);border:1px solid rgba(255,255,255,.18)}
+    .list{margin:0;padding-left:18px;color:var(--muted)}
+    footer{margin-top:56px;color:var(--muted);font-size:14px}
+    code,kbd{background:#0e1627;border:1px solid rgba(255,255,255,.08);padding:.2em .4em;border-radius:6px}
+    .cn{opacity:.9;margin-top:8px;font-size:14px}
+    a.inline{color:var(--accent)}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <span class="badge">Web Application</span>
+    <section class="hero">
+      <div class="card" style="flex:1 1 420px">
+        <h1>[Your App Name]</h1>
+        <p class="lead">A lightweight web tool to retrieve and analyze TikTok video statistics (views, likes, comments, favorites, shares) for internal business analytics.</p>
+        <p class="lead">Built for teams who need reliable, compliant access to official TikTok data via OAuth and Open API.</p>
+
+        <div class="btns">
+          <!-- 如需展示OAuth入口，可把 href 换成你的授权链接 -->
+          <a class="btn" href="[Optional OAuth authorize URL]">Authorize with TikTok</a>
+          <a class="btn ghost" href="[https://your-username.github.io/your-repo/privacy-policy]">Privacy Policy</a>
+          <a class="btn ghost" href="[https://your-username.github.io/your-repo/terms-of-service]">Terms of Service</a>
+        </div>
+        <p class="cn">（中文说明）[Your App Name] 用于通过 TikTok 官方接口获取视频播放量、点赞、评论、收藏、转发等数据，仅用于内部数据分析。</p>
+      </div>
+
+      <div class="card" style="flex:1 1 300px">
+        <h3 style="margin-top:0">Key Features</h3>
+        <ul class="list">
+          <li>Official TikTok OAuth + Open API</li>
+          <li>Batch query by video IDs</li>
+          <li>Metrics: view / like / comment / favorite / share</li>
+          <li>CSV export & scheduled tracking</li>
+          <li>Privacy-first. No data resell.</li>
+        </ul>
+        <h3>Contact</h3>
+        <p class="lead">Email: <a class="inline" href="mailto:[Contact Email]">[Contact Email]</a></p>
+      </div>
+    </section>
+
+    <section class="grid">
+      <div class="card">
+        <h3>Compliance Notes</h3>
+        <p class="lead">This app requests scopes such as <code>video.list</code>, <code>video.query</code>, and <code>user.info.basic</code> strictly for internal analytics. Users can revoke access anytime.</p>
+      </div>
+      <div class="card">
+        <h3>Redirect URI</h3>
+        <p class="lead">Configured redirect: <code>[https://your-redirect-uri.example.com]</code>. Ensure it matches exactly in your TikTok developer console and in the OAuth authorize URL.</p>
+      </div>
+      <div class="card">
+        <h3>Security</h3>
+        <p class="lead">Tokens are stored securely on server-side (recommended). Do not expose client secrets in client-side code.</p>
+      </div>
+    </section>
+
+    <footer>
+      © <span id="y"></span> [Your Company/Your Name]. All rights reserved.
+    </footer>
+  </div>
+  <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+</body>
+</html>

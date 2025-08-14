@@ -1,1 +1,1 @@
-tiktok-developers-site-verification=Oo20RHj747oK6jqFfLRp8VUDlDtFXYJC
+tiktok-developers-site-verification=tqGatGWu7EfTKTz7QAgSN1WLTdnNccrY
